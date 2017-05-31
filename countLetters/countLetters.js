@@ -8,10 +8,10 @@ function countLetters(str) {
   for (var char = 0; char < str.length; char++){
     var current = letterCount[str[char]];
     if (current == undefined) {
-      current = [char];
+      current = 1;
     }
     else {
-      current.push(char);
+      current ++;
     }
     letterCount[str[char]] = current;
   }
